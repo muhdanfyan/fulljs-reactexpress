@@ -54,7 +54,7 @@ export const updateProduct = async (req, res) => {
 export const deleteProduct = async (req, res) => {
     
     try {
-        await Product.destroy(req.body, {
+        await Product.destroy({
             where : {
                 id: req.params.id
             }
