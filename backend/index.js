@@ -1,6 +1,7 @@
 import express from "express";
 import db from "./config/database.js";
 import productRoutes from "./routes/index.js";
+import cors from "cors";
 
 const app = express();
 
@@ -15,6 +16,7 @@ try {
 //     res.send ('welcome');
 // });
 
+app.use(cors());
 app.use(express.json());
 
 //use untuk route ke folder routes
