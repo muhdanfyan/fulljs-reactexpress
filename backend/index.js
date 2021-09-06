@@ -12,9 +12,9 @@ try {
     console.error ('Connection error : ', error);
 }
 
-// app.get('/', (req, res) => {
-//     res.send ('welcome');
-// });
+app.get('/', (req, res) => {
+    res.send ('welcome');
+});
 
 app.use(cors());
 app.use(express.json());
